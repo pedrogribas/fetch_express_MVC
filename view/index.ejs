@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova 2</title>
+</head>
+<body>
+    <p>Requisição API de livros para a Sandrinha</p>
+    <% let i = 0
+            itens.forEach(element => {
+    %>          <ul>
+                    <li> <b>ID:</b> <%= i %></li>
+                    <li> <b>Título:</b> <%= itens[i].volumeInfo.title %></li>
+                    <li> <b>Autor:</b> <%= itens[i].volumeInfo.authors %></li>
+                    <li> <b>Editora:</b> <%= itens[i].volumeInfo.publisher %></li>
+                    <li> <b>Data de Publicação:</b> <%= itens[i].volumeInfo.publishedDate %></li>
+                    <li> <b>Descrição: </b><%= itens[i].volumeInfo.description %></li>
+
+                </ul>
+
+    <%
+        i++
+         });
+    
+    %> 
+</body>
+</html>
